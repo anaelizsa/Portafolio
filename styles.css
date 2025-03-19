@@ -1,9 +1,91 @@
-html{
+html {
+    height: 100%;
+    width: 100%;
     margin: 10px;
+}
+
+* {
+    padding: 0;
     box-sizing: border-box;
+}
+
+/*Header*/
+#title {
+    font-size: 300%;
+    font-weight: 700;
 }
 
 /*Projects*/
 .descriptionprojects p {
-    
+    font-size: 1vw;
+}
+
+
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    #encabezado {
+        min-height: 80px;
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    #login {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 993px) {
+    #encabezado {
+        min-height: 80px;
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    #login {
+        margin-top: 10px;
+    }
 }
